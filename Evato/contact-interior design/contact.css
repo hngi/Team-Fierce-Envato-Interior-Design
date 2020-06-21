@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --btn-text: #fef1dd;
+    --primary-color: #1b1e33;
+    --secondary-color: #f59709;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*  NAVIGATION */
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav {
+    margin-right: 4rem;
+}
+
+.navbar-nav a {
+    margin-left: 2rem;
+}
+
+nav .dev-evanto {
+    color: rgb(247, 244, 239);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.dev-line1 {
+    color: white;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.dev-line2 {
+    color: white;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.dev-brand {
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.navbar {
+    padding-bottom: 1.5rem;
+}
+
+.navbar ul a {
+    color: white;
+}
+
+.navbar ul a:hover {
+    color: var(--secondary-color);
+}
+
+
+/*  ANIMATIO */
+
+.bounceIn {
+    animation-delay: 1.2s;
+}
+
+
+/*  SIDE BAR */
+
+
+/* The sidepanel menu */
+
+.sidepanel {
+    height: 40rem;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+    opacity: 0.9;
+}
+
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtnm {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+.openbtnm:hover {
+    background-color: var(--secondary-color);
+}
+
+.openbtn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* MAP IMAGE */
+
+.contact-map-image {
+    background-image: url('googlemap.png');
+    background-size: cover;
+    height: 50rem;
+    background-attachment: fixed;
+}
+
+
+/*  CONTACT-CAPTION/ FIRST SECTION */
+
+.display-4 {
+    font-weight: bolder;
+    color: white;
+}
+
+.dev-main {
+    height: auto;
+    background-color: var(--primary-color);
+    color: rgb(250, 245, 245);
+    margin-bottom: 5rem;
+}
+
+.Contact-us {
+    margin-top: 1.7rem;
+    margin-bottom: 0;
+}
+
+.dev-contact {
+    padding-bottom: 1.6rem;
+}
+
+
+/*  SECOND SECTION/ TWO GRID */
+
+.vi,
+.bi {
+    color: var(--secondary-color);
+}
+
+.dev-form1 {
+    margin-bottom: 1rem;
+    height: 2.8rem;
+    color: white;
+}
+
+.dev-form2 {
+    margin-bottom: 1rem;
+    height: 2.8rem;
+    color: white;
+}
+
+.dev-form3 {
+    resize: none;
+    height: 10rem;
+    color: white;
+    border-color: whitesmoke;
+    padding-top: 1rem;
+}
+
+.col-md-6 textarea {
+    background-color: var(--primary-color);
+    border-radius: 0.2rem;
+}
+
+.col-md-6 input {
+    background-color: var(--primary-color);
+    border-radius: 0.2rem;
+}
+
+.col-md-6 textarea:focus {
+    color: var(--secondary-color);
+}
+
+.btn-dev {
+    background-color: var(--secondary-color);
+    padding: 1rem 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    color: var(--btn-text);
+}
+
+.contact1 {
+    text-decoration: none;
+    margin-bottom: 1.6rem;
+}
+
+.contact2 {
+    text-decoration: none;
+    margin-bottom: 1.6rem;
+}
+
+.contact3 {
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+.dev-footer {
+    padding-top: 0;
+    text-align: left;
+}
+
+.team-fury {
+    font-weight: bolder;
+}
+
+.dev-ft-nav {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    color: black;
+}
+
+.dev-ft-nav:hover {
+    color: orange;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dev-l {
+    margin-left: 0;
+}
+
+.foot-icon {
+    margin-left: 12.5rem;
+}
+
+.dev-icon {
+    margin-left: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.dev-copy {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    margin-left: 0;
+}
+
+@media (max-width: 1013px) {
+    .openbtn {
+        display: none;
+    }
+}
