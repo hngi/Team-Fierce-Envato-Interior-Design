@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --btn-text: #fef1dd;
+    --primary-color: #1b1e33;
+    --secondary-color: #f59709;
+    --footer: #ccc;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/*  NAVIGATION */
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav {
+    margin-right: 4rem;
+}
+
+.navbar-nav a {
+    margin-left: 2rem;
+}
+
+nav .dev-evanto {
+    color: rgb(247, 244, 239);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.dev-line1 {
+    color: white;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.dev-line2 {
+    color: white;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.dev-brand {
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.navbar {
+    padding-bottom: 1.5rem;
+}
+
+.navbar ul a {
+    color: white;
+}
+
+.navbar ul a:hover {
+    color: var(--secondary-color);
+}
+
+
+/*  ANIMATIO */
+
+.bounceIn {
+    animation-delay: 1.2s;
+}
+
+
+/*  SIDE BAR */
+
+
+/* The sidepanel menu */
+
+.sidepanel {
+    height: 100vh;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+    opacity: 0.9;
+}
+
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtnm {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+.openbtnm:hover {
+    background-color: var(--secondary-color);
+}
+
+.openbtn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* GENERAL SETUP */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*  IMAGE GALLERY */
+
+.galahero {
+    background: url('./gallery-images/gallery.PNG');
+    background-size: cover;
+    height: 10rem;
+}
+
+.galahero h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+figure {
+    margin: 0;
+}
+
+.dev-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+}
+
+.dev-container>div {
+    height: 15rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.dev-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* gallery content */
+
+.content {
+    margin-top: -20%;
+    color: aliceblue;
+    background-color: rgba(31, 31, 65, 0.5);
+    width: 100%;
+    overflow: hidden;
+    height: 4.5rem;
+    z-index: 199999;
+    position: relative;
+}
+
+.content p {
+    color: var(--secondary-color);
+}
+
+
+/*  actual gallary images */
+
+
+/*
+.row1a {
+    background: url('./gallery-images/Rectangle 68.png') no-repeat;
+}
+
+.row1b {
+    background: url('./gallery-images/Rectangle 71.png') no-repeat;
+}
+
+.row1c {
+    background: url('./gallery-images/Rectangle 70.png') no-repeat;
+}
+
+.row2a {
+    background: url('./gallery-images/Rectangle 72.png') no-repeat;
+}
+
+.row2b {
+    background: url('./gallery-images/Rectangle 73.png') no-repeat;
+}
+
+.row2c {
+    background: url('./gallery-images/Rectangle 74.png') no-repeat;
+}
+
+.row3a {
+    background: url('./gallery-images/Rectangle 75.png') no-repeat;
+}
+
+.row3b {
+    background: url('./gallery-images/Rectangle 76.png') no-repeat;
+}
+
+.row3c {
+    background: url('./gallery-images/Rectangle 77.png') no-repeat;
+}
+
+.row4a {
+    background: url('./gallery-images/Rectangle 78.png') no-repeat;
+}
+
+.row4b {
+    background: url('./gallery-images/Rectangle 79.png') no-repeat;
+}
+
+.row4c {
+    background: url('./gallery-images/Rectangle 80.png') no-repeat;
+}*/
+
+.right {
+    font-size: 5rem;
+    color: var(--secondary-color);
+    margin-top: 0;
+    text-align: right;
+    text-decoration: none;
+    margin-left: 23rem;
+    margin-bottom: 7rem;
+    border: none;
+}
+
+
+/* FOOTER */
+
+.dev-footer {
+    padding-top: 0;
+    text-align: left;
+}
+
+.team-fury {
+    font-weight: bolder;
+}
+
+.dev-ft-nav {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 1.2rem;
+    color: black;
+}
+
+.dev-ft-nav:hover {
+    color: orange;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dev-l {
+    margin-left: 0;
+}
+
+.foot-icon {
+    margin-left: 12.5rem;
+}
+
+.dev-icon {
+    margin-left: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.dev-copy {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    margin-left: 0;
+}
+
+@media (max-width: 1013px) {
+    .openbtn {
+        display: none;
+    }
+    .dev-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        margin-top: 8rem;
+        margin-bottom: 7rem;
+    }
+    .content {
+        margin-top: -10%;
+        color: aliceblue;
+        background-color: rgba(31, 31, 65, 0.5);
+        width: 100%;
+        overflow: hidden;
+        height: 4.5rem;
+        z-index: 199999;
+        position: relative;
+    }
+    .right {
+        font-size: 5rem;
+        color: var(--secondary-color);
+        margin-top: 0;
+        text-align: right;
+        text-decoration: none;
+        margin-left: 22rem;
+        margin-bottom: 7rem;
+        position: relative;
+        left: 0.5rem;
+    }
+    .right {
+        font-size: 5rem;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+}
