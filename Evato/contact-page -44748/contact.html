@@ -3,6 +3,8 @@
 
 <head>
     <!-- B00TSTRAP-CSS only -->
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
@@ -64,11 +66,11 @@
     <main class="dev-main">
 
         <!--  MAP IMAGE -->
-        <div class="contact-map-image"></div>
+        <div class="contact-map-image" id="map"></div>
         <!--  CONTACT-CAPTION/ FIRST SECTION-->
         <section class="container Contact-us">
             <div class="row">
-                <h1 class="col-sm-12 display-3 text-center dev-contact wow bounceIn">Contact Us</h1>
+                <h1 class="col-sm-12 display-5 text-center dev-contact wow bounceIn">Contact Us</h1>
                 <p class="col-sm-12 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum quis adipisci!</p>
                 <p class="col-12 text-center">Lorem ipsum dolor sit.</p>
             </div>
@@ -82,7 +84,7 @@
             <div class="row">
                 <!--  CONTACT-ADDRESS -->
                 <div class="wow fadeInLeft container find-us col-md-6">
-                    <h2 class="col-md-12 display-4 ">Find Us</h2>
+                    <h2 class="col-md-12 display-5 ">Find Us</h2>
                     <p class="col-md-12 contact1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores nesciunt voluptatum similique atque.</p>
 
 
@@ -145,15 +147,41 @@
 
     </footer>
     <!-- JS, Popper.js, Wow and jQuery -->
+    <script src="../bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/148658ab51.js" crossorigin="anonymous"></script>
     <script src="wow.min.js"></script>
+    <script src="../all.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="dev.js"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: 6.465422,
+                lng: 3.406448
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 13,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb4iByKhSN3N_eOI2lgcqagm55vk2uKdw&callback=initMap">
+    </script>
+
 
 </body>
 

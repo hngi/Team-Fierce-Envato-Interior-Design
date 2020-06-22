@@ -173,6 +173,20 @@ nav .dev-evanto {
 
 /*  IMAGE GALLERY */
 
+.galahero {
+    background: url('./gallery-images/gallery.PNG');
+    background-size: cover;
+    height: 10rem;
+}
+
+.galahero h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
 figure {
     margin: 0;
 }
@@ -274,8 +288,9 @@ figure {
     margin-top: 0;
     text-align: right;
     text-decoration: none;
-    margin-left: 29rem;
+    margin-left: 23rem;
     margin-bottom: 7rem;
+    border: none;
 }
 
 
@@ -334,7 +349,7 @@ figure {
         margin-bottom: 7rem;
     }
     .content {
-        margin-top: -10%;
+        margin-top: -21%;
         color: aliceblue;
         background-color: rgba(31, 31, 65, 0.5);
         width: 100%;
@@ -349,7 +364,9 @@ figure {
         margin-top: 0;
         text-align: right;
         text-decoration: none;
-        margin-left: 22rem;
+        margin-left: 3rem;
         margin-bottom: 7rem;
+        position: relative;
+        left: 0.5rem;
     }
 }

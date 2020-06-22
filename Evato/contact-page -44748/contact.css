@@ -160,10 +160,9 @@ nav .dev-evanto {
 /* MAP IMAGE */
 
 .contact-map-image {
-    background-image: url('googlemap.png');
-    background-size: cover;
+    /* background-image: url('googlemap.png'); */
     height: 50rem;
-    background-attachment: fixed;
+    width: 100%;
 }
 
 
@@ -301,5 +300,9 @@ nav .dev-evanto {
 @media (max-width: 1013px) {
     .openbtn {
         display: none;
+    }
+    h1,
+    h2 {
+        font-size: 2rem;
     }
 }
