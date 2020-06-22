@@ -352,4 +352,9 @@ figure {
         margin-left: 22rem;
         margin-bottom: 7rem;
     }
+    .right {
+        font-size: 5rem;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
 }

@@ -236,8 +236,7 @@ nav .dev-evanto {
 
 .footer-img {
     background: url('abstract-architect-architectural-design-art-323645.jpg') no-repeat;
-    height: 49rem;
-    background-attachment: fixed;
+    height: 30rem;
     width: 100%;
 }
 
@@ -280,6 +279,22 @@ nav .dev-evanto {
     display: grid;
     grid-template-columns: repeat(4, 21%);
     gap: 3rem;
+}
+
+.team figure h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.team figure h3 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.team figure p {
+    text-align: center;
 }
 
 
@@ -418,8 +433,18 @@ nav .dev-evanto {
 }
 
 @media (max-width: 1013px) {
-    .openbtn {
+    .openbtn,
+    .team figure h3,
+    .team figure p {
         display: none;
+    }
+    .team figure .o {
+        color: var(--secondary-color);
+    }
+    .teamg {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
 }
 

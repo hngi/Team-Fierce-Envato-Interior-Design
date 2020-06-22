@@ -64,11 +64,11 @@
     <main class="dev-main">
 
         <!--  MAP IMAGE -->
-        <div class="contact-map-image"></div>
+        <div class="contact-map-image" id="map"></div>
         <!--  CONTACT-CAPTION/ FIRST SECTION-->
         <section class="container Contact-us">
             <div class="row">
-                <h1 class="col-sm-12 display-3 text-center dev-contact wow bounceIn">Contact Us</h1>
+                <h1 class="col-sm-12 display-5 text-center dev-contact wow bounceIn">Contact Us</h1>
                 <p class="col-sm-12 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum quis adipisci!</p>
                 <p class="col-12 text-center">Lorem ipsum dolor sit.</p>
             </div>
@@ -82,7 +82,7 @@
             <div class="row">
                 <!--  CONTACT-ADDRESS -->
                 <div class="wow fadeInLeft container find-us col-md-6">
-                    <h2 class="col-md-12 display-4 ">Find Us</h2>
+                    <h2 class="col-md-12 display-5 ">Find Us</h2>
                     <p class="col-md-12 contact1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores nesciunt voluptatum similique atque.</p>
 
 
@@ -154,6 +154,30 @@
         new WOW().init();
     </script>
     <script src="dev.js"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: 6.465422,
+                lng: 3.406448
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 13,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb4iByKhSN3N_eOI2lgcqagm55vk2uKdw&callback=initMap">
+    </script>
+
 
 </body>
 
