@@ -447,6 +447,9 @@ nav .dev-evanto {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+    .b {
+        display: none;
+    }
 }
 
 @media (max-width: 680px) {
